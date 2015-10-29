@@ -12,7 +12,7 @@ public class AnimalFarm {
 		 * 1. Ask the user which animal they want, then play the sound of that
 		 * animal.
 		 */
-		String dino = JOptionPane.showInputDialog("what type of animal do you want");
+		String dino = JOptionPane.showInputDialog("what type of animal do you want cow,duck,dog,llama");
 		/* 2. Make it so that the user can keep entering new animals. */
 
 		if (dino.equals("cow")) {
@@ -21,13 +21,13 @@ public class AnimalFarm {
 
 		{
 			playQuack();
+		} else if (dino.equals("dog")) {
+			playWoof();
 		}
-		else if (dino .equals("dog")){
-	playWoof();		
-		}
-		}
-	
-
+	else if(dino.equals("llama")) {
+		playLlama();
+	}
+	}
 	void playMoo() {
 		playNoise(mooFile);
 	}
@@ -38,6 +38,10 @@ public class AnimalFarm {
 
 	void playWoof() {
 		playNoise(woofFile);
+	}
+
+	void playLlama() {
+		playNoise(llamaFile);
 	}
 
 	String quackFile = "/Users/League/Google Drive/league-sounds/quack.wav";
