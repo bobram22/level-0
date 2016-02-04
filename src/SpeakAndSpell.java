@@ -21,7 +21,7 @@ String bub = JOptionPane.showInputDialog("spell cat");
 if(bub .equals("felis catus")){
 	JOptionPane.showMessageDialog(null, "only two ways you looked at the code or you use google");
 speak("next time don't cheat");
-bob++;f
+bob++;
 }
 		// 4. Otherwise say "wrong"
 else{
